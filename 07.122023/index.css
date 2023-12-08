@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.box{
+    display: flex;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
