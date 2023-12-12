@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            display: flex;
+            width: 700px;
+            background-color: white;
+            align-content: space-between;
+            flex-direction: column;
+        }
+
+        .message{
+            display: flex;
+            
+        }
+
+        .webber{
+            display: flex;
+            box-sizing: content-box;
+            width: 600px;
+            height: 100px;
+        }
+
+        .webber img{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .mark{
+            background-color: aliceblue;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column; 
+            margin-left: 10px;
+            margin-bottom: 20px;      
+            
+        }
+
+        .news{
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .time{
+            margin-top: 0px;
+            color: rgb(153, 150, 150);
+        }
+
+        .hello{
+            border:1px solid black
+            
+        }
+
+        .smith{
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="message">
+            <div class="d1">
+                <div>
+                    <h1>Notification</h1>
+                </div>
+                <div>
+                    <p class="d2" style="background-color: blue;color:white;width: 20px;height: 20px; text-align: center;">3</p> 
+                </div>                                  
+            </div>
+            <div class="d3">
+                <p>Mark all as read</p>
+            </div>
+        </div>
+        <div class="webber mark">
+            <div>
+                <img src="./assets/images/avatar-mark-webber.webp" alt="face">
+            </div>
+            <div class="text">
+                <p class="news">Mark Webber reacted to your rcent post My first yournament today!</p>
+                <p class="time">1m ego</p>
+            </div>    
+        </div>
+        <div class="webber grey">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="face">
+            <div class="text">
+                <p class="news">Angela Gray followed you</p>
+                <p class="time">5m ego</p>
+            </div>    
+        </div>
+        <div class="webber mark">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="face">
+            <div class="text">
+                <p class="news">Yacob Thompson has joined Chess Club</p>
+                <p class="time">1 day ego</p>
+            </div>    
+        </div>
+        <div class="webber">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="face">
+            <div class="text">
+                <div>
+                    <p class="news">Rizky Hasanuddin sent you a private message</p>
+                    <p class="time">5 day ego</p>
+                </div>
+                <div>
+                    <p class="hello">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit voluptatum quis dolore commodi perspiciatis corporis esse vero quos veniam.</p>
+                </div>             
+            </div>    
+        </div>
+        <div class="webber smith">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="face">
+            <div class="text">
+                <p class="news">Kimbberly Smith commented on your picture</p>
+                <p class="time">1 week ego</p>
+            </div>    
+        </div>
+        <div class="webber">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="face">
+            <div class="text">
+                <p class="news">Nathan Peterson reacted to your recent post 5 end-game strategise to increase your win rate</p>
+                <p class="time">2 weeks ego</p>
+            </div>    
+        </div>
+        <div class="webber">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="face">
+            <div class="text">
+                <p class="news">Anna Kim left the group Chess Club</p>
+                <p class="time">2 weeks ego</p>
+            </div>    
+        </div>
+    </main>
+
+</body>
+</html>
