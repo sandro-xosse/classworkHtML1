@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f2022;
+}
+
+.maincontainer{
+    background-color: #edf2f8;
+    margin: 0 auto;
+    max-width: 1200px;   
+    margin-top: 7%;
+    display: flex;
+    gap: 20px;
+    padding: 6%;
+}
+
+.container{
+    display: flex;
+    width: calc(68% - 20px);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job{
+    background-color:#7f2dc4;
+    width: calc(70% - 20px);
+    color: white;
+    border-radius: 12px;
+}
+
+.job>div{
+    margin: 1%;
+    padding: 3%;
+}
+
+.emt{
+    color: rgb(196, 194, 194);
+    font-size: 13px;
+}
+
+.emt{
+    color: rgb(196, 194, 194);
+    font-size: 13px;
+}
+
+.team{
+    background-color: #4b546a;
+    color: white;
+    width: 30%;
+    border-radius: 12px;
+}
+
+.team>div{
+    margin:4%;
+    padding: 6%;
+}
+
+.ipsum{
+    color: #979aa1;
+    font-size: 11px;
+}
+
+.wonderful{
+    background-color: white;
+    width: 30%;
+    border-radius: 12px;
+}
+
+.wonderful>div{
+    margin:2%;
+    padding: 6%;
+}
+
+.dolor{
+    color: rgb(115, 113, 113);
+    font-size: 11px;
+}
+
+.tas{
+    background-color: #191f2c;
+    color: white;
+    width: calc(70% - 20px);
+    border-radius: 12px;
+}
+
+.tas>div{
+    margin: 1%;
+    padding: 3%;
+}
+
+.amet{
+    color: rgb(168, 167, 167);
+    font-size: 11px;
+}
+
+.experience{
+    width: 32%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.experience>div{
+    margin: 4%;
+    padding: 6%;
+}
+
+.nesciunt{
+    color: rgb(106, 105, 105);
+    font-size: 11px;
+}
+
+.imgdesign{
+    display: flex;
+    align-items: center;
+}
+
+.imgborder{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
