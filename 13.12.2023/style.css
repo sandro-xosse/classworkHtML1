@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.main-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    font-size: 22px;
+    color: #797979;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav>* {
+    margin-right: 50px;
+}
+
+.drop-down-parent {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.drop-down-parent:hover .drop-down {
+    visibility: visible;
+}
+
+.drop-down-link {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background-image: url('./images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.drop-down {
+    width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 42px;
+    left: -20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    visibility: hidden;
+    transition-delay: 0.2s;
+}
+
+.drop-down:hover {
+    visibility: visible;
+}
+
+.main-log {
+    width: 100px;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth>a {
+    margin-left: 25px;
+}
+
+.register {
+    border: 3px solid #797979;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+
+.register:hover {
+    background-color: white;
+    border-color: black;
+}
+
+main {
+    width: 450px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-text>* {
+    margin-bottom: 55px;
+}
+
+.remote {
+    width: 395px;
+    font-size: 35px;
+}
+
+.team {
+    width: 320px;
+    color: rgb(105, 102, 102);
+}
+
+.learn-more {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 12px 25px;
+    color: white;
+    background-color: black;
+}
+
+.learn-more:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image {
+    width: 450px;
+    margin-top: 50px;
+}
