@@ -20,14 +20,19 @@ body{
 
 .container{
     display: flex;
-    width: calc(68% - 20px);
+    flex-grow: 2;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+.first{
+    display: flex;
+    gap:20px;
+}
+
 .job{
     background-color:#7f2dc4;
-    width: calc(70% - 20px);
+    flex-grow: 2;
     color: white;
     border-radius: 12px;
 }
@@ -50,7 +55,7 @@ body{
 .team{
     background-color: #4b546a;
     color: white;
-    width: 30%;
+    flex-grow: 1;
     border-radius: 12px;
 }
 
@@ -66,7 +71,7 @@ body{
 
 .wonderful{
     background-color: white;
-    width: 30%;
+    flex-grow: 1;
     border-radius: 12px;
 }
 
@@ -83,7 +88,7 @@ body{
 .tas{
     background-color: #191f2c;
     color: white;
-    width: calc(70% - 20px);
+    flex-grow: 2;
     border-radius: 12px;
 }
 
@@ -98,7 +103,7 @@ body{
 }
 
 .experience{
-    width: 32%;
+    flex-grow: 1;
     background-color: white;
     border-radius: 12px;
 }
