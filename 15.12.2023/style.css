@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgb(12, 5, 68);
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 4% 6%;
+}
+
+.ioopstudios {
+    margin-bottom: 80px;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+}
+
+.random {
+    display: flex;
+}
+
+.head-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 15px;
+    color: rgb(181, 172, 172);
+    margin-right: 15px;
+}
+
+.menu a::after {
+    width: 0;
+    height: 5px;
+    background-color: rgb(115, 112, 112);
+    content: "";
+    margin: 0 auto;
+    display: block;
+    transition: 0.2s;
+    margin-top: 2px;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu>div {
+    margin-right: 10px;
+}
+
+.deliver {
+    width: 300px;
+}
+
+.deliver>* {
+    border: 1px solid white;
+    padding: 3%;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.first {
+    height: 260px;
+    display: flex;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.interactive {
+    width: 60%;
+    height: 260px;
+    background-image: url(./images/desktop/image-interactive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leader {
+    background-color: white;
+    width: 50%;
+    height: 130px;
+    padding: 20px 0px 0px 40px;
+    position: absolute;
+    bottom: -1%;
+    left: 46%;
+}
+
+.vr {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.founded {
+    color: rgb(120, 117, 117);
+    font-size: 11px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.creations {
+    font-size: 25px;
+}
+
+.see-all {
+    font-size: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 7px 20px;
+}
+
+.see-all:hover {
+    background-color: black;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.flex-container-top {
+    display: flex;
+    gap: 20px;
+}
+
+.earth {
+    width: 25%;
+    height: 320px;
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(199, 196, 196);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.night {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+}
+
+.soccer {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+}
+
+.grid {
+    background-image: url(./images/desktop/image-grid.jpg);
+}
+
+.above {
+    background-image: url(./images/desktop/image-from-above.jpg);
+}
+
+.pocket {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+}
+
+.curiosity {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+}
+
+.fisheye {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.studios {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footer-icons {
+    display: flex;
+    margin: 0px 0px 6px 120px;
+    margin-right: 30px;
+}
+
+.footer-icons>* {
+    margin-right: 8px;
+}
+
+.reserved {
+    color: rgb(205, 194, 194);
+}
