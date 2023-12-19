@@ -39,7 +39,7 @@ header{
 }
 
 .header-icon{
-    background-image: url(./images/favicon-32x32.png);
+    background-image: url(./images/icon-hamburger.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 30px;
