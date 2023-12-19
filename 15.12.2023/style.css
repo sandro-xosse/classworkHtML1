@@ -167,6 +167,7 @@ main {
     display: flex;
     align-items: flex-end;
     padding: 20px;
+    position: relative;
 }
 
 .night {
