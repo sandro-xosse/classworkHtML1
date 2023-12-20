@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(54, 52, 52);
+}
+
+.main-container{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    max-width: 100vw;
+    height: 50vw;
+    margin: 2vw 0vw;
+}
+
+.blue-side{
+    flex-grow: 1;
+    height: 100%;
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white-side{
+    flex-grow: 2;
+    height: 100%;
+    background-color: white;
+}
+
+.card-front-side{
+    position: absolute;
+    width: 22vw;
+    height: 12vw;
+    border-radius: 12px;
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:11vw;
+    left: 17vw;
+    padding: 1vw 2vw;
+    color: white;
+}
+
+.card-number{
+    position: absolute;
+    width: 90%;
+    font-size:2vw;
+    bottom: 4vw;
+}
+
+.card-name{
+    font-size: 1vw;
+    position: absolute;
+    bottom:1vw;
+}
+
+.card-date{
+    font-size: 1vw;
+    position: absolute;
+    bottom:1vw;
+    right: 1vw;
+}
+.white-circle{
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    
+}
+
+.card-back-side{
+    width: 22vw;
+    height: 12vw;
+    border-radius: 12px;
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:25vw;
+    left:23vw;
+}
+
+form{
+    position: absolute;
+    top:10vw;
+    right: 15vw;
+    max-width: 35vw;
+}
+
+.date-cvc{
+    display: flex;
+    gap:1vw;
+}
+
+.input-text{
+    color: rgb(31, 4, 85);
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    margin-bottom: 0vw;
+    margin-top: 1vw;
+}
+
+input{
+    width: 100%;
+    height: 2.5vw;
+}
+
+.confirm{
+    width: 100%;
+    height: 2.5vw;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(31, 4, 85) ;
+    margin-top: 1vw;
+}
