@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(61, 61, 61);
+}
+
+.main-container{
+    margin: 0 auto;
+    max-width:100%;
+    background-color: white;
+    padding: 2vw 5vw 2vw 2vw;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+menu{
+    width: 30%;
+    padding:1%;  
+    display: flex;
+    justify-content: space-between;
+    color: rgb(1, 1, 17);
+    font-size: 1vw;  
+}
+
+.main-content{
+    display: flex;
+}
+
+.future{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-web{
+    margin: 0 auto;
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vw;
+}
+
+.bright{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bright>h2{
+    width: 40%;
+    font-size: 4vw;
+}
+
+.evolution{
+    width: 60%;
+    position: relative;
+}
+
+.dive{
+    color: rgb(141, 139, 139);
+    padding: 1vw 0 ;
+}
+
+.read-more{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background-color: rgb(237, 107, 60);
+    color: white;
+    padding: 10px 28px;
+    font-size: 13px;
+}
+
+.blue-container{
+    width: 35%;
+    background-color: rgb(2, 2, 40);
+    padding: 2vw 1vw;
+}
+
+.blue-container>*{
+    padding: 10px 0;
+}
+
+.blue-container>h2{
+    color: orange;
+}
+
+.questions{
+    line-height: 25px;
+}
+
+.questions>h3{
+    color: white;
+}
+.questions>h5{
+    color: rgb(168, 168, 168);
+}
