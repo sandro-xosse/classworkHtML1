@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(61, 61, 61);
+}
+
+.main-container{
+    margin: 0 auto;
+    max-width:100%;
+    background-color: white;
+    padding: 1vw 3vw;
+}
+
+.menu-container{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icon-menu{
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/images/icon-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    z-index: 2;
+}
+
+.icon-menu:hover{
+    background-image: url(./assets/images/icon-menu-close.svg); 
+   
+}
+
+menu{
+    position:absolute;
+    top: 16px;
+    padding-top: 8px;
+    right: -1vw;
+    flex-direction: column;
+    width: 70%;
+    height:fit-content;
+    background-color: white;
+    display: none;
+    padding-left: 1vw;
+    color: rgb(3, 3, 52);
+    transition-delay: 10s;
+}
+ 
+.icon-menu:hover~menu{
+    display: flex;
+}
+menu:hover{
+    display: flex;
+}
+
+.home{
+    line-height: 30px;
+}
+
+.future{
+    margin-bottom: 30px;
+}
+
+.image-web{
+    margin: 0 auto;
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vw;
+}
+
+.bright{
+    padding: 10px 90px 0 0;
+}
+
+.dive{
+    color: rgb(141, 139, 139);
+    padding: 10px 0 ;
+}
+
+.read-more{
+    width: 50%;
+    background-color: rgb(237, 107, 60);
+    color: white;
+    padding: 10px 28px;
+    font-size: 13px;
+}
+
+.blue-container{
+    background-color: rgb(2, 2, 40);
+    padding: 15px 10px;
+}
+
+.blue-container>*{
+    padding: 10px 0;
+}
+
+.blue-container>h2{
+    color: orange;
+}
+
+.questions{
+    line-height: 25px;
+}
+
+.questions>h3{
+    color: white;
+}
+.questions>h5{
+    color: rgb(168, 168, 168);
+}
+
+.computer{
+    
+}

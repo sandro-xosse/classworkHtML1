@@ -4,9 +4,14 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+@font-face {
+    font-family: variable;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
 
 body{
     background-color: rgb(62, 61, 61);
+    font-family: variable;
 }
 
 .main-container{
@@ -43,10 +48,9 @@ body{
 }
 
 .text-information{
-    display: flex;
-    justify-content: space-between;
-    padding: 3% 10%;
+    padding: 3% 7%;
     font-size: 1vw;
+    position: relative;
 }
 
 .faqs{
@@ -67,6 +71,9 @@ body{
     background-size: cover;
     width: 1.5vw;
     height: 1.5vw;
+    position: absolute;
+    top:0.5vw;
+    right: 0.5vw;
 }
 
 .plus-icon:hover {
@@ -78,12 +85,21 @@ body{
 }
 
 .portfolio{
-    display: none;
-    padding: 3% 10%;
+    height: 0;
+    overflow: hidden;
+    padding: 0% 5%;
     font-size: 1vw;
     color: rgb(148, 146, 146);
 }
 
 .plus-icon:hover~.portfolio{
+<<<<<<< HEAD
     display: flex;
 }
+=======
+    height: 20%;
+    transition: 0.2s;
+}
+
+
+>>>>>>> 7b63803ce17383d1bef0a63b7ebf359abad71826
