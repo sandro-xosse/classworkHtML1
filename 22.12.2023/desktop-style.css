@@ -10,8 +10,8 @@ body{
 }
 
 .main-container{
-    margin: 0 auto;
-    max-width:100%;
+    margin: 3vw auto;
+    max-width:1400px;
     background-color: white;
     padding: 2vw 5vw 2vw 2vw;
 }
@@ -19,6 +19,11 @@ body{
 .menu-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container>h2{
+    font-size: 6vw;
 }
 
 menu{
@@ -32,6 +37,7 @@ menu{
 
 .main-content{
     display: flex;
+    margin-bottom: 3%;
 }
 
 .future{
@@ -45,7 +51,7 @@ menu{
     background-image: url(./assets/images/image-web-3-desktop.jpg);
     background-size: cover;
     width: 100%;
-    height: 40vw;
+    height: 20vw;
 }
 
 .bright{
@@ -60,7 +66,9 @@ menu{
 
 .evolution{
     width: 60%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dive{
@@ -69,13 +77,13 @@ menu{
 }
 
 .read-more{
-    position: absolute;
     bottom: 0;
     width: 50%;
     background-color: rgb(237, 107, 60);
     color: white;
-    padding: 10px 28px;
-    font-size: 13px;
+    padding: 1vw 1vw;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .blue-container{
@@ -85,7 +93,7 @@ menu{
 }
 
 .blue-container>*{
-    padding: 10px 0;
+    padding: 1vw 0;
 }
 
 .blue-container>h2{
@@ -93,7 +101,7 @@ menu{
 }
 
 .questions{
-    line-height: 25px;
+    line-height: 2vw;
 }
 
 .questions>h3{
@@ -101,4 +109,34 @@ menu{
 }
 .questions>h5{
     color: rgb(168, 168, 168);
+}
+
+footer{
+    display: flex;
+    gap:2vw;
+}
+
+.computer{
+    display: flex;
+    gap:5%;
+}
+
+.retro-pc-image{
+    width: 6vw;
+    height: 9vw;
+}
+
+.pc-laptops-gaming{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pc-laptops-gaming>h2{
+    font-size:1.5vw ;
+}
+
+.pc-laptops-gaming>h3{
+    font-size: 1.5vw;
+    color: gray;
 }
