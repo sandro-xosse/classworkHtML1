@@ -93,8 +93,13 @@ body{
 }
 
 .plus-icon:hover~.portfolio{
+<<<<<<< HEAD
+    display: flex;
+}
+=======
     height: 20%;
     transition: 0.2s;
 }
 
 
+>>>>>>> 7b63803ce17383d1bef0a63b7ebf359abad71826
