@@ -89,8 +89,9 @@ menu:hover{
     width: 50%;
     background-color: rgb(237, 107, 60);
     color: white;
-    padding: 10px 28px;
-    font-size: 13px;
+    padding: 3vw 1vw;
+    font-size: 2.5vw;
+    text-align: center;
 }
 
 .blue-container{
@@ -117,6 +118,31 @@ menu:hover{
     color: rgb(168, 168, 168);
 }
 
+footer{
+    gap:10%;
+}
+
 .computer{
-    
+    display: flex;
+    margin-top: 5%;
+}
+
+.retro-pc-image{
+    width: 20vw;
+    height: 25vw;
+}
+
+.pc-laptops-gaming{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pc-laptops-gaming>h2{
+    font-size:5vw ;
+}
+
+.pc-laptops-gaming>h3{
+    font-size: 4vw;
+    color: gray;
 }

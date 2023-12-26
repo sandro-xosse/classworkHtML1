@@ -11,8 +11,7 @@ body{
 
 .main-container{
     margin: 3vw auto;
-    max-width:1200px;
-    height: 70vw;
+    max-width:1400px;
     background-color: white;
     padding: 2vw 5vw 2vw 2vw;
 }
@@ -82,8 +81,9 @@ menu{
     width: 50%;
     background-color: rgb(237, 107, 60);
     color: white;
-    padding: 5% 17%;
-    font-size: 40%;
+    padding: 1vw 1vw;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .blue-container{
@@ -101,7 +101,7 @@ menu{
 }
 
 .questions{
-    line-height: 1vw;
+    line-height: 2vw;
 }
 
 .questions>h3{
@@ -113,9 +113,30 @@ menu{
 
 footer{
     display: flex;
-    gap:1.5vw;
+    gap:2vw;
 }
 
 .computer{
     display: flex;
+    gap:5%;
+}
+
+.retro-pc-image{
+    width: 6vw;
+    height: 9vw;
+}
+
+.pc-laptops-gaming{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pc-laptops-gaming>h2{
+    font-size:1.5vw ;
+}
+
+.pc-laptops-gaming>h3{
+    font-size: 1.5vw;
+    color: gray;
 }
