@@ -69,7 +69,12 @@ menu:hover{
 
 main{
     padding: 0 5%;
-    background-color: aliceblue;
+    background-color: #fafafa;
+}
+
+section{
+    position: relative;
+    top:-10vw;
 }
 
 .first-section{
@@ -77,17 +82,15 @@ main{
     position: relative;
     padding: 9% 5%;
     background-color: white;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
 }
 
 .logo-master{
     position: absolute;
     top:-10%;
     left:42%;
-}
-.project-bookmark{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .mastercraft{
@@ -100,7 +103,16 @@ main{
 .beautifully{
     color: gray;
     margin: 3vw auto;
+    padding: 0 10%;
 }
+
+.project-bookmark{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap:5vw;
+}
+
 .project{
     background-color: rgb(52 181 171);
     color:white;
@@ -109,11 +121,25 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 4vw;
 }
+
+.bookmark{
+    display: none;
+}
+
+.icon-bookmark{
+    width: 12vw;
+    height: 12vw;
+}
+
 .numbers{
     text-align: center;
     padding: 9% 3%;
     background-color: white;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
 }
 
 .calculating{
@@ -155,8 +181,10 @@ main{
 
 .about-project-stand{
     background-color: white;
-    border: 2px solid green;
     padding: 0 5vw;
+    margin-bottom: 10vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
 }
 
 .about-project{
@@ -182,12 +210,13 @@ main{
 .stand{
     padding: 9% 3%;
     background-color: white;
-    border: 2px solid rgb(199, 198, 198);
+    border: 1px solid rgb(171, 171, 171);
     border-radius: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80vw;
+    margin-bottom: 4vw;
 }
 
 .bamboo-stand{
@@ -218,6 +247,21 @@ main{
 
 .select-reward{
     background-color: rgb(52 181 171);
+    border-radius: 5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+}
+
+.another{
+    opacity: 50%;
+}
+
+.out-stock{
+    background-color: rgb(168, 168, 168);
     border-radius: 5vw;
     color: white;
     display: flex;
