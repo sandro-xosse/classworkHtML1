@@ -68,10 +68,11 @@ section{
 
 .logo-master{
     position: absolute;
-    top:-10%;
-    left:47%;
-    width: 5vw;
-    height: 5vw;
+    top:0;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width: 7vw;
+    height: 7vw;
 }
 
 .mastercraft{
