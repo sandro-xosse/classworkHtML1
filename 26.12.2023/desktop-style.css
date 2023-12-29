@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(97, 96, 96);
+}
+
+.icon-menu{
+    display: none;
+}
+
+.main-container{
+    margin: 0 auto;
+    min-width: 80vw;
+    background-color: white;
+}
+
+header{
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vw;
+    padding: 2vw 12vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-logo{
+    width: 50%;
+}
+
+menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+
+.home{  
+    color: white; 
+}
+
+main{
+    padding: 0 20%;
+    background-color: #fafafa;
+}
+
+section{
+    position: relative;
+    top:-10vw;
+}
+
+.first-section{
+    text-align: center;
+    position: relative;
+    padding: 9% 5%;
+    background-color: white;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+.logo-master{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width: 7vw;
+    height: 7vw;
+}
+
+.mastercraft{
+    margin: 2vw auto;
+    font-size: 2.7vw;
+    font-weight: 1000;
+}
+
+.beautifully{
+    color: gray;
+    margin: 3vw auto;
+    font-size: 1.7vw;
+}
+
+.project-bookmark{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project{
+    background-color: rgb(52 181 171);
+    color:white;
+    border-radius: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    font-size: 2vw;
+}
+
+.bookmark-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon-bookmark{
+    position: absolute;
+    right: 10vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+.bookmark{
+    background-color: rgb(230, 229, 229);
+    border-radius: 7vw;
+    padding: 1.3vw 1.2vw 1.3vw 4.5vw;
+    font-size: 1.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.numbers{
+    text-align: center;
+    padding: 5% 3%;
+    background-color: white;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+.total-blankers{
+    display: flex;
+    gap:10%;
+    margin-bottom: 5%;
+}
+
+.calculating{
+    line-height: 3vw;
+    margin-bottom: 1vw;
+}
+
+.big-numbers{
+    font-size: 3vw;
+    font-weight: 1000;
+}
+
+.low-numbers{
+    color: gray;
+    font-size: 2vw;
+}
+
+.process{
+    display: flex;
+    position: relative;
+}
+
+.green-side{
+    background-color: rgb(52 181 171);
+    width: 73%;
+    height: 2vw;
+    border-radius: 2vw;
+    z-index: 1;
+}
+
+.white-side{
+    position: absolute;
+    width: 27%;
+    height: 2vw;
+    background-color: rgb(221, 219, 219);
+    border-radius:2vw;
+    right: 3vw;
+}
+
+.about-project-stand{
+    background-color: white;
+    padding: 0 5vw;
+    margin-bottom: 20vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+.about-project{
+    padding: 7% 0;
+}
+
+.about-project>*{
+    margin-bottom: 3vw;
+}
+
+.about-this-project{
+    font-size: 3vw;
+    font-weight: 1000;
+}
+
+.monitor{
+    font-size: 2vw;
+    color: gray;
+}
+
+.stand{
+    padding: 8% 3%;
+    background-color: white;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 4vw;
+}
+
+.stand>*{
+    margin-bottom: 5%;
+}
+
+.bamboo-pledge{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bamboo-stand{
+    font-size: 2vw;
+    font-weight: 1000;
+}
+
+.pledge{
+    font-size: 2vw;
+    color: rgb(52 181 171);
+    font-weight: 1000;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    gap:3vw;
+}
+
+.quantity-number{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+}
+
+.number{
+    font-size: 3vw;
+    font-weight: 1000;
+}
+
+.select-reward{
+    background-color: rgb(52 181 171);
+    border-radius: 5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    width: 50%;
+    font-size: 2vw;
+}
+
+.another{
+    opacity: 50%;
+}
+
+.out-stock{
+    background-color: rgb(168, 168, 168);
+    border-radius: 5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    width: 50%;
+    font-size: 2vw;
+}

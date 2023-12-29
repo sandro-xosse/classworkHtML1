@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main-container{
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+header{
+    background-image: url(./images/image-hero-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vw;
+    padding: 5vw 3vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-logo{
+    width: 25vw;
+}
+
+.icon-menu{
+    width: 6%;
+    height: 7%;
+    background-image: url(./images/icon-hamburger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-delay: 0.2s;
+}
+
+.icon-menu:hover{
+    background-image: url(./images/icon-close-menu.svg);
+}
+
+menu{
+    position:absolute;
+    bottom: 18%;
+    flex-direction: column;
+    width: 93%;
+    padding: 4% 7%;
+    height:70%;
+    background-color: white;
+    display: none;
+    transition-delay: 0.2s;
+    font-size: 7vw;
+    border-radius: 2vw;
+    justify-content: space-evenly;
+}
+
+.home{
+    line-height: 10vw;
+    color: black;
+}
+
+.icon-menu:hover~menu{
+    display: flex;
+}
+menu:hover{
+    display: flex;
+}
+
+main{
+    padding: 0 5%;
+    background-color: #fafafa;
+}
+
+section{
+    position: relative;
+    top:-10vw;
+}
+
+.first-section{
+    text-align: center;
+    position: relative;
+    padding: 9% 5%;
+    background-color: white;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+.logo-master{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width: 10vw;
+    height: 10vw;
+}
+
+.mastercraft{
+    margin: 2vw auto;
+    width: 60%;
+    font-size: 5vw;
+    font-weight: 1000;
+}
+
+.beautifully{
+    color: gray;
+    margin: 3vw auto;
+    padding: 0 10%;
+}
+
+.project-bookmark{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap:5vw;
+}
+
+.project{
+    background-color: rgb(52 181 171);
+    color:white;
+    border-radius: 7vw;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
+
+.bookmark{
+    display: none;
+}
+
+.icon-bookmark{
+    width: 12vw;
+    height: 12vw;
+}
+
+.numbers{
+    text-align: center;
+    padding: 9% 3%;
+    background-color: white;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+.calculating{
+    line-height: 6vw;
+    margin-bottom: 5vw;
+}
+
+.big-numbers{
+    font-size: 6vw;
+    font-weight: 1000;
+}
+
+.low-numbers{
+    color: gray;
+    font-size: 4vw;
+}
+
+.process{
+    display: flex;
+    position: relative;
+}
+
+.green-side{
+    background-color: rgb(52 181 171);
+    width: 73%;
+    height: 3vw;
+    border-radius: 2vw;
+    z-index: 1;
+}
+
+.white-side{
+    position: absolute;
+    width: 27%;
+    height: 3vw;
+    background-color: rgb(202, 200, 200);
+    border-radius:2vw;
+    right: 3vw;
+}
+
+.about-project-stand{
+    background-color: white;
+    padding: 0 5vw;
+    margin-bottom: 10vw;
+    border-radius: 2vw;
+    border: 1px solid rgb(224, 223, 223);
+}
+
+.about-project{
+    padding: 10% 0;
+    line-height: 6vw;
+    margin-bottom: 5vw;
+}
+
+.about-project>*{
+    margin-bottom: 3vw;
+}
+
+.about-this-project{
+    font-size: 5vw;
+    font-weight: 1000;
+}
+
+.monitor{
+    font-size: 4vw;
+    color: gray;
+}
+
+.stand{
+    padding: 9% 3%;
+    background-color: white;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vw;
+    margin-bottom: 4vw;
+}
+
+.bamboo-stand{
+    font-weight: 1000;
+}
+
+.pledge{
+    color: rgb(52 181 171);
+    font-weight: 1000;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: column;
+    gap:3vw;
+}
+
+.quantity-number{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+}
+
+.number{
+    font-size: 6vw;
+    font-weight: 1000;
+}
+
+.select-reward{
+    background-color: rgb(52 181 171);
+    border-radius: 5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+}
+
+.another{
+    opacity: 50%;
+}
+
+.out-stock{
+    background-color: rgb(168, 168, 168);
+    border-radius: 5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+}
