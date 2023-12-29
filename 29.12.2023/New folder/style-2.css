@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(57, 56, 56);
+}
+
+.main-container {
+    width: 96%;
+    margin: 50px auto;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    padding: 30px 20px;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image {
+    width: 200px;
+    height: 30px;
+}
+
+menu {
+    width: 90%;
+    height: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    overflow: hidden;
+    color: #0e0e29;
+    transition: 0.3s;
+    top: 60px;
+    left: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav>span {
+    display: none;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    background-image: url(./images/icon-hamburger.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.burger:hover {
+    background-image: url(./images/icon-close.svg);
+}
+
+.drop-down-menu:hover menu {
+    height: 400px;
+}
+
+.percent,
+.reports {
+    padding: 30px 20px;
+}
+
+.percent img {
+    width: 100%;
+}
+
+.bring {
+    text-align: center;
+}
+
+.bring>* {
+    margin-bottom: 20px;
+}
+
+.percent h2 {
+    color: #0e0e29;
+    font-size: 35px;
+    padding: 0 80px;
+}
+
+.bring>p {
+    color: gray;
+    padding: 0 40px;
+}
+
+.color-orange {
+    border-radius: 20px;
+    color: white;
+    background-color: #f46043;
+    padding: 10px 25px;
+    border: none;
+}
+
+.reports>* {
+    margin-bottom: 40px;
+}
+
+.reports h2 {
+    padding: 0 80px;
+    color: #272b50;
+    font-weight: 1200;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.manage>p {
+    color: gray;
+    padding: 0 40px;
+}
+
+.progress {
+    margin-bottom: 35px;
+}
+
+.progress>p {
+    color: gray;
+}
+
+.progress>* {
+    margin-bottom: 10px;
+}
+
+.orange-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+
+.orange-number {
+    color: white;
+    background-color: #f46043;
+    padding: 5px 18px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.track {
+    background-color: #fdb4a5;
+    padding: 5px 18px 5px 70px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #272b50;
+    font-weight: 700;
+}

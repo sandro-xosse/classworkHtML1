@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width:95%;
+    margin:50px auto;
+}
+
+main div{
+    width: 100%;
+}
+
+.cars{
+    padding: 50px;
+}
+
+.cars>*{
+    margin-bottom: 70px;
+}
+
+.cars>h2{
+    color: white;
+    font-size: 30px;
+}
+
+.cars>p{
+    color: #f2f2f2;
+}
+
+.cars>span{
+    border: 1px solid white;
+    background-color: white;
+    padding: 5% 15%;
+    border-radius: 50px;
+}
+
+.color-orange{
+    color: #e28525;
+}
+
+.color-blue{
+    color: #016972;
+}
+
+.color-green{
+    color: #00403f;
+}
+
+.sedans-container{
+    background-color: #e28525;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.suvs-container{
+    background-color: #016972;
+}
+
+.luxury-container{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #00403f;
+}
+
+@media only screen and (min-width: 800px){
+    main{
+        display: flex;
+    }
+
+    .sedans-container{
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .luxury-container{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+}
+@media only screen and (min-width: 1100px){
+    main{
+        width: 1000px;
+    }
+}
