@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(57, 56, 56);
+}
+
+.main-container {
+    width: 96%;
+    margin: 50px auto;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    padding: 30px 20px;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image {
+    width: 200px;
+    height: 30px;
+}
+
+menu {
+    width: 90%;
+    height: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    overflow: hidden;
+    color: #0e0e29;
+    transition: 0.3s;
+    top: 60px;
+    left: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    background-image: url(./images/icon-hamburger.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.burger:hover {
+    background-image: url(./images/icon-close.svg);
+}
+
+.drop-down-menu:hover menu {
+    height: 400px;
+}
+
+.get-started{
+    color: white;
+    background-color: #f46043;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border:none;
+}
+
+.percent,
+.reports {
+    padding: 30px 20px;
+}
+
+.percent img {
+    width: 100%;
+}
+
+.bring {
+    text-align: center;
+}
+
+.bring>* {
+    margin-bottom: 20px;
+}
+
+.percent h2 {
+    color: #0e0e29;
+    font-size: 35px;
+    padding: 0 80px;
+}
+
+.bring>p {
+    color: gray;
+    padding: 0 40px;
+}
+
+.color-orange {
+    border-radius: 20px;
+    color: white;
+    background-color: #f46043;
+    padding: 10px 25px;
+    border: none;
+}
+
+.reports>* {
+    margin-bottom: 40px;
+}
+
+.reports h2 {
+    padding: 0 80px;
+    color: #272b50;
+    font-weight: 1200;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.manage>p {
+    color: gray;
+    padding: 0 40px;
+}
+
+.progress {
+    margin-bottom: 35px;
+}
+
+.progress>p {
+    color: #a4a6ac;
+}
+
+.progress>* {
+    margin-bottom: 10px;
+}
+
+.orange-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+
+.orange-number {
+    color: white;
+    background-color: #f46043;
+    padding: 5px 18px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.track {
+    background-color: #fdb4a5;
+    padding: 5px 18px 5px 70px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #272b50;
+    font-weight: 700;
+}
+
+.comment{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comment>h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: #272b50;
+}
+
+.comment div{
+    margin-bottom: 50px;
+}
+
+.ali-bravo-com{
+    background-color: rgb(250 250 250);
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ali-bravo-com>img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.ali-bravo-com>h3{
+    margin-bottom: 15px;
+}
+
+.ali-bravo-com>p{
+    color: #a4a6ac;
+}
+
+.orange-section{
+    background-color: #f46043;
+    text-align: center;
+    padding: 30px 110px;
+}
+
+.orange-section>p{
+    font-size: 35px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.orange-section>button{
+    color: #f46043;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border:none;
+}
+
+footer{
+    background-color: #1e1e26;
+    padding: 30px 0;
+}
+
+.updates-go{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.updates-go>input{
+    width: 48vw;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.updates-go>span{
+    color: white;
+    background-color: #f46043;
+    padding: 12px 23px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-container div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+}
+
+.menu-container a{
+    color: #f4f5fa;
+}
+
+.icons-container{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.icons-container img{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copyright>span{
+    color: #83858b;
+}
+
+@media only screen and (min-width: 800px){
+    .main-container {
+        max-width: 1000px;
+    }
+
+    .main-container {
+        width: 96%;
+        margin: 50px auto;
+        background-color: white;
+    }
+    
+    header {
+        width: 100%;
+        padding: 30px 20px;
+        position:static;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    menu {
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: none;
+        justify-content: center;
+        gap: 5px;
+        overflow: visible;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .hidden {
+        display: flex;
+    }
+    
+    .burger {
+        display: none;
+    }
+    
+    .drop-down-menu:hover menu {
+        height: 0;
+    }
+
+    .percent{
+        display: flex;
+    }
+
+    .image-intro{
+        order: 1;
+    }
+    
+    .percent,
+    .reports {
+        padding: 30px 20px;
+    }
+
+    .bring {
+        text-align: start;
+    }
+    
+    .bring>* {
+        margin-bottom: 30px;
+    }
+    
+    .percent h2 {
+        padding: 0 40px 0 0;
+    }
+    
+    .bring>p {
+        padding: 0 70px 0 0;
+    }
+    
+    .color-orange {
+        border-radius: 20px;
+        color: white;
+        background-color: #f46043;
+        padding: 10px 25px;
+        border: none;
+    }
+
+    .reports{
+        display: flex;
+        gap: 60px;
+    }
+    
+    .reports>* {
+        margin-bottom: 40px;
+        align-items: flex-start;
+    }
+    
+    .reports h2 {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    .manage>p {
+        padding: 0;
+    }
+    
+    .progress>p {
+        padding: 0 0 0 70px;
+    }
+    
+    .orange-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 20px;
+    }
+    
+    .orange-number {
+        color: white;
+        background-color: #f46043;
+        padding: 5px 18px;
+        border-radius: 20px;
+        position: absolute;
+    }
+    
+    .track {
+        background-color: white;
+        padding: 5px 18px 5px 70px;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        color: #272b50;
+        font-weight: 700;
+    }
+    
+    .comment{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .comment>h2{
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 35px;
+        color: #272b50;
+    }
+    
+    .comment div{
+        margin-bottom: 30px;
+    }
+
+    .persons-container{
+        display: flex;
+        gap:20px;
+    }
+    
+    .ali-bravo-com{
+        padding: 30px 0;
+    }
+
+    .orange-section{
+        align-items: center;
+        display: flex;
+        gap:150px;
+        padding: 30px 60px;
+    }
+    
+    .orange-section>p{
+        font-size: 35px;
+        color:white;
+        margin-bottom: 20px;
+    }
+    
+    .orange-section>button{
+        color: #f46043;
+        background-color: white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        border:none;
+        width: 200px;
+        height: 40px;
+    }
+    
+    footer{
+        background-color: #1e1e26;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .updates-go{
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+    }
+    
+    .updates-go>input{
+        width: 200px;
+        padding: 0 20px;
+        border-radius: 20px;
+        border: none;
+        height:40px;
+        margin-right: 10px;
+    }
+    
+    .updates-go>span{
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        height: 40px;
+    }
+    
+    .menu-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .menu-container div{
+        display: flex;
+        flex-direction: column;
+        padding: 0 70px;
+    }
+    
+    .menu-container a{
+        color: #f4f5fa;
+    }
+
+    .logo-icons{
+        display: flex;
+        flex-direction: column-reverse
+    }
+    
+    .icons-container{
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+    }
+    
+    .icons-container img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    
+    .logo{
+        text-align: center;
+    }
+    
+    .copyright{
+        text-align: center;
+    }
+    
+    .copyright>span{
+        color: #83858b;
+        
+    }
+}
