@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4a4d5f;
+}
+
+.main-container{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f3f0fb;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.pricing{
+    color: #4a4d5f;
+    margin-bottom: 40px;
+}
+
+.container{
+    text-align: center;
+    background-color: white;
+    color: #4a4d5f;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+
+.container>*{
+    margin-bottom: 20px;
+}
+
+.container>h4{
+    padding: 20px 0;
+}
+
+.container>h2{
+    font-size: 70px;
+}
+
+.storage{
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+
+.container>p{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+
+.container>button{
+    background-color: #7a69db;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0;
+}
+
+.blueviolet-container{
+    text-align: center;
+    background-color: #7a69db;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+
+.blueviolet-container>*{
+    margin-bottom: 20px;
+}
+
+.blueviolet-container>h4{
+    padding: 20px 0;
+}
+
+.blueviolet-container>h2{
+    font-size: 70px;
+}
+
+.blueviolet-container .stor{
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+
+.blueviolet-container>p{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+
+.blueviolet-container>button{
+    background-color: white;
+    color: #7a69db;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0;
+}
+
+@media only screen and (min-width:800px){
+    .main-container{
+        margin: 100px auto;
+        max-width: 1000px;
+        background-color: #f3f0fb;
+        text-align: center;
+        position: relative;
+        z-index:1;
+    }
+
+    .main-container .bg-top{
+        background-image: url(./images/bg-top.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 300px;
+        height: 500px;
+        right: 0;
+        top:0;
+        z-index: -1;
+    } 
+
+    .main-container .bg-bottom{
+        background-image: url(./images/bg-bottom.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        left: 0;
+        bottom:0;
+        z-index: -1;
+    } 
+    
+    .pricing{
+        color: #4a4d5f;
+        margin-bottom: 40px;
+    }
+
+    .information{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container{
+        margin-bottom: 13px;
+        margin-top: 13px;
+        border-radius: 5px;
+        padding: 0px 30px;
+    }
+    
+    
+    .blueviolet-container{
+        background-color: #7a69db;
+        color: white;
+        margin-bottom: 0px;
+        border-radius: 5px;
+        padding: 15px 30px;
+    }
+
+}
