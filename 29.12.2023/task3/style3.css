@@ -48,15 +48,12 @@ menu {
     top: 53px;
     left: 0;
     right: 0;
-  
-    
 }
 menu a{
     width: 85%;
     color: white;
     font-size: 25px;
     font-weight: 400;
-
 }
 
 .border-link{
@@ -127,6 +124,12 @@ menu a:last-child{
     margin-right: 4%;
 }
 
+.chrome-button:hover{
+    background-color: white;
+    color: #655ddb;
+    border: 1px solid #655ddb;
+}
+
 .firefox-button{
     width: 40%;
     border-radius: 5px;
@@ -137,6 +140,12 @@ menu a:last-child{
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.firefox-button:hover{
+    border:1px solid darkblue;
+    color:darkblue;
+    box-shadow:none;
 }
 
 .speed{
@@ -150,6 +159,21 @@ menu a:last-child{
 
 .speed span{
     padding: 15px 0;
+    width: 80%;
+}
+
+.speed ::after {
+    width: 0;
+    height: 5px;
+    background-color: #ff5657;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    transition: 0.2s;
+}
+
+.speed :hover::after {
+    width: 100%;
 }
 
 .speed span:first-child{
@@ -175,6 +199,10 @@ menu a:last-child{
 }
 
 .more-info{
+    background-color: #655ddb;
+    color: white;
+    padding: 10px;
+    border: none;
     display: none;
 }
 
@@ -186,6 +214,7 @@ menu a:last-child{
 
 .download-extension{
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .download-extension>h2{
@@ -232,8 +261,53 @@ menu a:last-child{
     border: none;
 }
 
+.browser-install>button:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
 .questions{
-    text-align: center;
+    padding: 0 40px;
+}
+
+div.item{
+    position: relative;
+    border-bottom: 1px solid;
+    margin-bottom: 50px;
+}
+
+.item>h4{
+    font-size: 20px;
+}
+
+.item>h4:hover{
+    color:red;
+}
+
+.icon-container{            
+    width:20px;
+    height: 20px;
+    background-image: url('./images/icon-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:0px;
+    right: 10px;
+}
+.icon-container:hover{
+    background-image: url('./images'); 
+}
+
+.item p{   
+    margin-top: 10px;        
+    height: 0;
+    overflow:hidden;
+    transition: 1s;
+}
+.icon-container:hover~p{
+   height: 100px; 
 }
 
 .blue-container{
@@ -295,4 +369,351 @@ footer>img{
 
 .facebook{
     margin-right: 10px;
+}
+
+@media only screen and (min-width: 800px){
+    .main-container {
+        max-width: 1000px;
+    }
+    
+    header {
+        width: 100%;
+        padding: 30px 30px;
+        position: static;
+        padding: 20px 50px;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:20%;
+
+    }
+    
+    .logo-image {
+        width: 200px;
+        height: 30px;
+    }
+
+    .drop-down-menu{
+        display: flex;
+    }
+    
+    menu {
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: none;
+        justify-content: none;
+        text-align: none;
+        gap: 0;
+        overflow: visible;
+        background-color: white;
+        transition: 0;
+        height: 100%;       
+    }
+    menu a{
+        width: 100%;
+        color: rgb(13, 13, 13);
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+    
+    .border-link{
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .border-link:hover{
+        color: #fc5859;
+    }
+    
+    .contact{
+        border-bottom: none;
+        padding:  0;
+    }
+    
+    menu a:last-child{
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color:white;
+        background-color: #fc5859;
+    }
+
+    menu a:last-child:hover{
+        color:#fc5859;
+        background-color: white;
+        border:1px solid #fc5859;
+    }
+    
+    .burger {
+        display: none;
+    }
+    
+    .burger:hover {
+        background-image: url(./images/icon-close.svg);
+    }
+    
+    .drop-down-menu:hover menu {
+        height: auto;
+    }
+    
+    .percent{
+        display: flex;
+        padding: 0 50px;
+    }
+    
+    .percent img {
+        width: 100%;
+    }
+    
+    .bring {
+        text-align: center;
+        order: -1;
+        text-align: start;
+    }
+    
+    .bring>* {
+        margin-bottom: 20px;
+    }
+    
+    .percent h2 {
+        color: #0e0e29;
+        font-size: 35px;
+        padding: 0;
+    }
+    
+    .bring>p {
+        padding: 0;
+    }
+    
+    .chrome-button{
+        width: 130px;
+        border-radius: 5px;
+        border: none;
+        padding: 8px 10px;
+        background-color: #655ddb;
+        color: white;
+        margin-right: 5px;
+    }
+    
+    .firefox-button{
+        width: 130px;
+        border-radius: 5px;
+        border: none;
+        padding: 8px 10px;
+        background-color: white;
+        color: rgb(15, 15, 15);
+        box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .manage{
+        text-align: center;
+        padding: 0 50px;
+    }
+    
+    .speed{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        font-size: 17px;
+        padding: 40px 0;
+        justify-content: center;
+    }
+    
+    .speed span{
+        padding: 15px 20px;
+        border-bottom: 1px solid gray;
+        width: auto;
+    }
+    
+    .speed span:first-child{
+        border-top: none;
+        width: auto;
+    }
+    
+    .speed span:last-child{
+        border-bottom: 1px solid gray;
+        border-top: none;
+        width: auto;
+    }
+    
+    .one-click{
+        margin-bottom: 40px;
+        display: flex;
+        padding: 0 50px;
+    }
+
+    .features-tab1{
+        order: -1;
+    }
+    
+    .features-tab1 img{
+        width: 100%;
+        padding: 0 30px;
+        margin-bottom: 20px;
+    }
+    
+    .more-info{
+        display: flex;
+    }
+    
+    .browsers{
+        text-align: center;
+        padding: 0 30px;
+        margin-bottom: 50px;
+    }
+    
+    .download-extension{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .download-extension>h2{
+        color: #0e0e29;
+        margin-bottom: 10px;
+    }
+    
+    .download-extension>p {
+        color: gray;
+        padding: 0 30px;
+    }
+
+    .browser-container{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+    }
+    
+    .browser-install{
+        width: 160px;
+        margin-bottom: 0;
+        padding: 0px 0 0px 0;
+    }
+
+    .chrome-container{
+        margin-bottom: 40px;
+    }
+
+    .firefox-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .opera-container{
+        margin-top: 40px;
+    }
+    
+    .browser-install>img{
+        margin-bottom: 30px;
+    }
+    
+    .browser-install>button{
+        background-color: blue;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: none;
+        margin: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .questions{
+        padding: 0 25%;
+
+    }
+    
+    div.item{
+        position: relative;
+        border-bottom: 1px solid;
+        margin-bottom: 50px;
+    }
+    
+    .item>h4{
+        font-size: 20px;
+    }
+    
+    .icon-container{            
+        width:20px;
+        height: 20px;
+        background-image: url('./images/icon-arrow.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top:0px;
+        right: 10px;
+    }
+    .icon-container:hover{
+        background-image: url('./images'); 
+    }
+    
+    .item p{   
+        margin-top: 10px;        
+        height: 0;
+        overflow:hidden;
+        transition: 1s;
+    }
+    .icon-container:hover~p{
+       height: 100px; 
+    }
+
+    .input-contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:10px;
+        padding: 0 0 20px 0;
+    }
+    
+    .input-contact>input{
+        padding: 10px 0 10px 10px;
+        border-radius: 5px;
+        border: none;
+        width: 200px;
+    }
+    
+    .input-contact>button{
+        width: 90px;
+        padding: 10px 0;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: #fb5859;
+    }
+    
+    footer{
+        padding: 0 50px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-menu{
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-menu>img{
+        padding: 20px;
+    }
+    
+    .features{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 10px;
+    }
+    
+    .features a{
+        color: rgb(178, 178, 178);
+    }
 }
