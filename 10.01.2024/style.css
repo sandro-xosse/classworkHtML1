@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid;
+    position: relative;
+}
+
+.site-name{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size:30px;
+    color:springgreen;
+    background-color: rgb(15, 91, 243);
+    animation-name: change-site-name;
+    animation-duration: 4s;
+    animation-iteration-count:4;
+}
+
+@keyframes change-site-name {
+    from {color:blue;background-color: brown;left: 0;top:0;}
+    to{color:springgreen;background-color: rgb(15, 91, 243);right: 0; bottom: 0;}
+}

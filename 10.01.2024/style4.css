@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 400px;
+    height: 400px;
+    margin: 280px auto;
+    border: 2px solid;
+    position: relative;
+    background-color: rgb(168, 255, 255);
+}
+
+
+
+.main-container:hover .red{
+    transform: rotate(135deg);
+    transform-origin: left top;
+    transition: 1s;
+}
+
+.main-container:hover .yellow{
+    transform: rotate(-135deg);
+    transition: 1s;
+    transform-origin: right top;
+}
+
+.main-container:hover .blue{
+    transform: rotate(-135deg);
+    transition: 1s;
+    transform-origin: bottom left;
+}
+
+.main-container:hover .green{
+    transform: rotate(135deg);
+    transition: 1s;
+    transform-origin: bottom right;
+}
+
+.red{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: red;
+    transform-origin: left top;
+}
+
+.yellow{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: yellow;
+    top:0;
+    right: 0;
+    transform-origin: top right;
+}
+
+.blue{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: blue;
+    bottom:0;
+    left: 0;
+}
+
+.green{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: green;
+    bottom:0;
+    right: 0;
+}

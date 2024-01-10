@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid;
+    position: relative;
+}
+
+.sun{
+    position: absolute;
+    right: 300px;
+    top:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    animation-name: sunrise;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-direction:alternate-reverse;
+}
+
+.claud-1{
+    position: absolute;
+    top:80px;
+    left: 0;
+    width: 90px;
+    height: 60px;
+    background-color: gray;
+    animation-name: qlaud-1-move;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+.claud-2{
+    position: absolute;
+    top:80px;
+    left: 220px;
+    width: 90px;
+    height: 60px;
+    background-color: gray;
+    animation-name: qlaud-2-move;
+    animation-duration: 13s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+.claud-3{
+    position: absolute;
+    right: 0;
+    top:80px;
+    width: 90px;
+    height: 60px;
+    background-color: gray;
+    animation-name: qlaud-3-move;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+.mauntain-1{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    background-color: blue;
+    width: 250px;
+    height: 230px;
+}
+
+.mauntain-2{
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+    background-color: blue;
+    width: 250px;
+    height: 200px;
+}
+
+.mauntain-3{
+    position: absolute;
+    bottom:0;
+    left: 500px;
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+}
+
+@keyframes sunrise {
+    0% {right: 300px;top:0;}
+    100%{right: 300px;top:270px;}
+}
+
+@keyframes qlaud-1-move {
+    0% {top:80px;left: 0;}
+    100%{top:80px;left: 700px;}
+}
+
+@keyframes qlaud-2-move {
+    0% {top:80px;left: 220px;}
+    50%{top:80px;left: 0px;}
+    100%{top:80px;left: 700px;}
+}
+
+@keyframes qlaud-3-move {
+    0% {top:80px;right: 0;}
+    50%{right: 400px; top:80px}
+    100%{right: 700px;top:80px;;}
+}
