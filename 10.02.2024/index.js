@@ -64,31 +64,41 @@
 
 // console.log(firstName)
 
-const johnScore=[90,120,103]
-const mikeScore=[116,94,123]
+const JohnScore = [89,120,120];
+const MikeScore = [116,94,123];
+const MaryScore = [97,134,105];
+
 
 function sum(arr){
-    let res=0
-    for(let i=0; i<arr.lenght; i++){
+    let res=0;
+    for(let i=0; i<arr.length; i++ ){
         res+=arr[i]
     }
     return res;
 }
 
+console.log(sum(JohnScore))
+console.log(sum(MikeScore))
+console.log(sum(MaryScore))
 
-function average(arr){
-    return sum(arr)/arr.lenght
+
+function average(arr) {
+    return sum(arr)/arr.length
 }
 
-let JohnAverageScore=average(johnScore)
-let MikeAverageScore=average(mikeScore)
-console.log(JohnAverageScore,MikeAverageScore)
+let JohnAverageScore = average(JohnScore)
+let MikeAverageScore = average(MikeScore)
+let MaryAverageScore = average(MaryScore)
 
-if (JohnAverageScore>MikeAverageScore){
-    console.log("winner is " + JohnAverageScore + "score")
+
+if (JohnAverageScore>MikeAverageScore && JohnAverageScore>MaryAverageScore){
+    console.log("winner is John " + JohnAverageScore + "score")
 }
-else if (MikeAverageScore>JohnAverageScore){
-    console.log("winner is " + MikeAverageScore + "score")
+else if (MikeAverageScore>JohnAverageScore && MikeAverageScore>MaryAverageScore){
+    console.log("winner is Mike " + MikeAverageScore + " score")
+}
+else if (MaryAverageScore>JohnAverageScore && MaryAverageScore>MikeAverageScore){
+    console.log("winner is Mary " + MaryAverageScore + " score")
 }
 else{
     console.log("game end with draw")
