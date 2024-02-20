@@ -3,7 +3,7 @@
 //     lastName:'Doe',
 //     age:35,
 //     isMaried:true
-}
+
 
 // function getKyes(obj){
 //     const res=[]
