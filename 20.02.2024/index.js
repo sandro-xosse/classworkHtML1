@@ -106,22 +106,65 @@ const products = [
   ];
 
 
-  function getData(productArray){
-    const res=productArray.reduce((acum,item)=>{
-        let key=item.category;
-        if(acum[key]){
-            acum[key].push(item.price)
-        }
-        else{
-            acum[key]=[item.price]
-        }
-    },{})
+//   function getData(productArray){
+//     const res=productArray.reduce((acum,item)=>{
+//         let key=item.category;
+//         if(acum[key]){
+//             acum[key].push(item.price)
+//         }
+//         else{
+//             acum[key]=[item.price]
+//         }
+//     },{})
 
-    const res2=[];
-    for(let item in res){
-        let averagePrice=res[key].reduce((a,b)=>a+b)/item.length
+//     const res2=[];
+//     for(let item in res){
+//         let averagePrice=res[key].reduce((a,b)=>a+b)/item.length
+//     }
+
+
+//   }
+
+
+
+
+// const res= products.reduce((acum,item)=>{
+//     let key=item.category;
+//     if(acum[key]){
+//         acum[key].push(item.price)
+//         return acum
+//     }
+//     else{
+//         acum[key]=[item.price]
+//         return acum
+//     }
+// },{})
+
+
+const res=products.reduce((acum,item)=>{
+    let key=item.category;
+    if(acum[key]){
+        acum[key].push(item.price)
     }
+    else{
+        acum[key]=[item.price]
+        return acum
+    }
+},{})
 
 
-  }
 
+console.log(res)
+
+
+
+
+
+
+// home
+
+// const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
+
+// // 1)itration
+// // 2)Array.prototype.LastindexOf
+// // 3)Array.prototype.indexof
