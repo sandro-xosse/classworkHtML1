@@ -121,7 +121,7 @@
 //     for(let item in res){
 //         let averagePrice=res[key].reduce((a,b)=>a+b)/item.length
 //     }
-<<<<<<< HEAD
+
 
 
 //   }
@@ -156,7 +156,7 @@
 
 
 // console.log(res)
-=======
+
 
 
 //   }
@@ -177,21 +177,21 @@
 // },{})
 
 
-const res=products.reduce((acum,item)=>{
-    let key=item.category;
-    if(acum[key]){
-        acum[key].push(item.price)
-    }
-    else{
-        acum[key]=[item.price]
-        return acum
-    }
-},{})
+// const res=products.reduce((acum,item)=>{
+//     let key=item.category;
+//     if(acum[key]){
+//         acum[key].push(item.price)
+//     }
+//     else{
+//         acum[key]=[item.price]
+//         return acum
+//     }
+// },{})
 
 
 
-console.log(res)
->>>>>>> c76848d3ba80f1ca4bfbfcf16e71dffd621ca7ef
+// console.log(res)
+
 
 
 
@@ -200,13 +200,97 @@ console.log(res)
 
 // home
 
-<<<<<<< HEAD
-const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
 
-// 1)itration
+// ***********************************************************
+
+// const myArray=[1,2,3,4,5,1,6,7,8,9,21,2,5,7,3,8,8,9,27,45]
+
+// function getUnique(arr){return arr.reduce((a,b)=>a.includes(b)?a:[...a,b],[])};
+
+// console.log(getUnique(myArray))
+
+
+// *****************************************************
+
+// const uniqArray=myArray.reduce((a,b) => {
+//     if(a.includes(b)){
+//         return a
+//     }
+//     else {
+//         a.push(b)
+//         return a
+//     }
+// },[])
+
+
+// console.log(uniqArray)
+
+
+// ****************************************************
+
+// function getUniqueArr(arr,unique=[]){
+//     if(arr.length){
+//         let item=arr[0];
+//         let lastIndex=arr.lastIndexOf(item);
+//         lastIndex===0?unique.push(arr.splice(0,1)[0]):arr.splice(0,1);
+//         getUniqueArr(arr,unique)
+//     }
+//     return unique
+// }
+
+// console.log(getUniqueArr(myArray))
+
+
+
+// *****************************************
+
+// const myArray2=[...myArray]
+
+// const uniqArray=[]
+
+// for(let item of myArray){
+//     let firstI=myArray2.indexOf(item);
+//     let lastI=myArray2.lastIndexOf(item);
+//     if(firstI===lastI){
+//         uniqArray.push(item)
+//     }
+//     else {
+//         myArray2.splice(firstI,1)
+//     }
+// }
+
+// console.log(uniqArray)
+
+// *************************************************
+
+
+// 1)iteration
 // 2)Array.prototype.LastindexOf
 // 3)Array.prototype.indexof
 
+// function universarr(arr){
+//     for (let a=0; a<arr.length; a++){
+
+//     }
+// }
+
+
+
+
+// const uniqArray=[]
+// myArray.forEach((item,index,arr)=>{
+//     const arr2=[...myArray]
+//     let firstI=arr2.indexOf(item);
+//     let lastI=arr2.lastIndexOf(item);
+//     if(firstI===lastI){
+//         uniqArray.push(item);
+//     }
+//     else{
+//         arr2.slice(firstI,1)
+//     }
+// })
+
+// console.log(uniqArray)
 
 
 
@@ -240,10 +324,33 @@ const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
 
 //   console.log(highPricedCategories)
   
-=======
+
 // const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
 
 // // 1)itration
 // // 2)Array.prototype.LastindexOf
 // // 3)Array.prototype.indexof
->>>>>>> c76848d3ba80f1ca4bfbfcf16e71dffd621ca7ef
+
+
+
+
+
+
+
+const myArray=[1,2,3,4,5,1,6,7,8,9,21,2,5,7,3,8,8,9,27,45]
+
+const sortedarray=myArray.sort((a,b)=>a-b)
+
+console.log(sortedarray)
+
+
+
+// **************************************************************
+
+// function sum(arr){return arr.reduce((a,b)=>a+b)}
+// function getAverage(arr){
+//     const Sum=sum(arr);
+//     return Sum/arr.length
+// }
+
+// console.log(getAverage(myArray))
