@@ -121,6 +121,7 @@
 //     for(let item in res){
 //         let averagePrice=res[key].reduce((a,b)=>a+b)/item.length
 //     }
+<<<<<<< HEAD
 
 
 //   }
@@ -155,6 +156,42 @@
 
 
 // console.log(res)
+=======
+
+
+//   }
+
+
+
+
+// const res= products.reduce((acum,item)=>{
+//     let key=item.category;
+//     if(acum[key]){
+//         acum[key].push(item.price)
+//         return acum
+//     }
+//     else{
+//         acum[key]=[item.price]
+//         return acum
+//     }
+// },{})
+
+
+const res=products.reduce((acum,item)=>{
+    let key=item.category;
+    if(acum[key]){
+        acum[key].push(item.price)
+    }
+    else{
+        acum[key]=[item.price]
+        return acum
+    }
+},{})
+
+
+
+console.log(res)
+>>>>>>> c76848d3ba80f1ca4bfbfcf16e71dffd621ca7ef
 
 
 
@@ -163,6 +200,7 @@
 
 // home
 
+<<<<<<< HEAD
 const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
 
 // 1)itration
@@ -202,3 +240,10 @@ const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
 
 //   console.log(highPricedCategories)
   
+=======
+// const myArray=[1,2,3,4,5,6,7,8,9,21,2,5,7,27,45]
+
+// // 1)itration
+// // 2)Array.prototype.LastindexOf
+// // 3)Array.prototype.indexof
+>>>>>>> c76848d3ba80f1ca4bfbfcf16e71dffd621ca7ef
