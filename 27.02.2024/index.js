@@ -121,3 +121,54 @@
 
 // console.log(test(text))
 
+
+
+
+
+
+// const text='robin singh some'
+
+// function test(str){
+//     return str.split(' ').map(el=>el.replace(el[0],el[0].toUpperCase())).join('');
+// }
+
+// console.log(test(text))
+
+
+
+
+// const text='Robin'
+// function test(str,n=1){
+//     if(n<=0) n=1;
+//     return str.repeat(n)
+// }
+
+
+// console.log(test(text,5))
+
+
+
+
+const text='helloWorld'
+function test(str,str2){
+    if(str2===0){
+        return str
+    }
+    else if(str2==='-'){
+        return str.split('-')
+    }
+}
+
+
+console.log(test(text,0))
+
+
+
+
+
+// const text='The best thing in life ar efreel!'
+// const pattern=/in/i
+
+// // console.log(text.search(pattern))
+
+// console.log(pattern.test(text))
