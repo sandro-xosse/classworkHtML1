@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chekBMI{
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border:1px solid;
+        }
+        .weight{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        button{
+            margin: 10px auto;
+            
+        }
+        .kilogram,.cantimeteres{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .buttonClick{
+            
+            margin: 10px auto;
+        }
+        .resultBMI{
+            margin: 10px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="chekBMI">
+        <div class="kilogram">
+            <p>put your weight</p>
+            <input id="weight" type="number">
+        </div>
+
+        <div class="cantimeteres">
+            <p>put your height</p>
+            <input id="height" type="number">
+        </div>
+        
+        <div class="buttonClick">
+            <button class="btn">Calculate BMI</button>
+        </div>
+        <p class="resultBMI" id="result">Result BMI</p>
+    </div>
+    
+    <script src="./index.js"></script>
+    
+</body>
+</html>
