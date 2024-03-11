@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border-collapse: collapse;
+            border:1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>first name</th>
+                <th>last name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody id="studentsTable">
+        </tbody>
+    </table>
+    
+
+    <script>
+        const date=new Date().getUTCFullYear()
+
+        const students=[
+            {
+                firstName:'Sandro',
+                lastName:'Khoistashvili',
+                birthYear:1998
+            },
+            {
+                firstName:'Giorgi',
+                lastName:'Berozashvili',
+                birthYear:2002
+            },
+            {
+                firstName:'Dachi',
+                lastName:'Bitsadze',
+                birthYear:2003
+            },
+            {
+                firstName:'Andria',
+                lastName:'Loladze',
+                birthYear:2005
+            },
+            {
+                firstName:'Buba',
+                lastName:'Batmanashvili',
+                birthYear:1997
+            },
+            {
+                firstName:'Giorgi',
+                lastName:'Dugladze',
+                birthYear:2005
+            }
+        ]
+
+        const studentsTable=document.querySelector('#studentsTable')
+        console.dir(studentsTable)
+
+        function init(students){
+
+            for(let student of students){
+                studentsTable.innerHTML+= `
+                                             <tr>
+                                                  <td>${student.firstName}</td>
+                                                  <td>${student.lastName}</td>
+                                                  <td>${date-student.birthYear}</td>
+                                             </tr>
+                                          `
+            }
+        }
+        init(students)
+    </script>
+
+
+
+</body>
+</html>

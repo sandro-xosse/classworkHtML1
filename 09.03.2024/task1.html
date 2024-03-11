@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 600px;
+            margin: 10px auto;
+            font-size: 30px;
+            border:1px solid green;
+            display: flex;
+            flex-direction: column;
+        }
+        table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td{
+            border-collapse: collapse;
+            border:1px solid red;
+            font-size: 35px;
+        }
+        table{
+            display: block;
+            width: 100%;
+        }
+        button,input,select{
+            font-size: 25px;
+        }
+        select{
+            display: none;
+        }
+        select.active{
+            display: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <label for="">
+                add new item
+                <input type="text">
+            </label>
+            <select name="" id="">
+                <option value="true">active</option>
+                <option value="false">completed</option>
+            </select>
+            <button class="btn-add">add new</button>
+        </form>
+        <table>
+            <thead>
+                <th>id</th>
+                <th>title</th>
+                <th>status</th>
+                <th>action</th>
+            </thead>
+            <tbody class="to-do-list">
+                <tr>
+                    <td>1</td>
+                    <td>to do 1</td>
+                    <td>active</td>
+                    <td>
+                        <button class="btn-delete">delete</button>
+                        <button class="btn-edit">edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
