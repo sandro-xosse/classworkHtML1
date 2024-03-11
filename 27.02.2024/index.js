@@ -149,26 +149,36 @@
 
 
 
-const text='helloWorld'
-function test(str,str2){
-    if(str2===0){
-        return str
-    }
-    else if(str2==='-'){
-        return str.split('-')
-    }
-}
+// const text='helloWorld'
+// function test(str,str2){
+//     if(str2===0){
+//         return str
+//     }
+//     else if(str2==='-'){
+//         return str.split('-')
+//     }
+// }
 
 
-console.log(test(text,0))
+// console.log(test(text,0))
 
 
 
 
 
-// const text='The best thing in life ar efreel!'
-// const pattern=/in/i
+const text='The best thing in life ar efreel!'
+const pattern=/in/i
 
-// // console.log(text.search(pattern))
+// console.log(text.search(pattern))
 
-// console.log(pattern.test(text))
+console.log(pattern.test(text))
+
+
+
+
+
+
+// let text = 'helloWorld'
+// const myArray = text.split("");
+
+// console.log(myArray)
