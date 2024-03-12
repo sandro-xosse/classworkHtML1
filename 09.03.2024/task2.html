@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            margin: 10px auto;
+            border:1px solid red;
+        }
+        form{
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        label{
+            margin-bottom: 20px;
+        }
+        table{
+            margin: 0 auto;
+            border: 1px solid green;
+        }
+        .image{
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <label for="">
+                name
+                <input type="text" name="name" placeholder="name">
+            </label>
+            <label for="">
+                last name
+                <input type="text" name="lastname" placeholder="last name">
+            </label>
+            <label for="">
+                email
+                <input type="email" name="email" placeholder="enter your email">
+            </label>
+            <label for="">
+                address
+                <input type="text" name="address" placeholder="address">
+            </label>
+            <label for="">
+                phone
+                <input type="number" name="phone" placeholder="+995 999 999 999">
+            </label>
+            <input type="submit" name="submit" id="">
+        </form>
+        <table>
+            <thead>
+                <th>id</th>
+                <th>first name</th>
+                <th>last name</th>
+                <th>email</th>
+                <th>address</th>
+                <th>phone</th>
+                <th>actions</th>
+            </thead>
+            <tbody class="to-do-list">
+                
+            </tbody>
+        </table>
+    </main>
+
+
+    <script src="/index2.js"></script>
+</body>
+</html>
