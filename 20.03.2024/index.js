@@ -65,11 +65,98 @@
 // -------------------------------------------------------------------------------------------
 
 
-function reverse(num){
-    const binary=num.toString(2)
-}
+// function reverse(num){
+//     const binary=num.toString(2)
+//     const revers=reverseString(binary);
+//     const result=
+// }
 
-function reverseString(str){
-    return (str === '')?'':reverseString(str.slice(1))+str.chatAt(0)
-}
-console.log(reverseString('Hello'))
+// function reverseString(str){
+//     return (str === '')?'':reverseString(str.slice(1))+str.chatAt(0)
+// }
+// console.log(reverseString('Hello'))
+
+// ---------------------------------------------------------------------
+
+// 21. Write a JavaScript function to repeat a string for a specified time.
+// Test Data :
+// console.log(repeat_string('a', 4));
+// console.log(repeat_string('a'));
+// Output :
+// "aaaa"
+// "Error in string or count."
+
+
+
+// function repeatString(str,num=1){
+//     if(!num || num<0) return str;
+//     let res=''
+//     for(let i=0;i<num;i++){
+//         res+=str
+//     }
+//     return res
+// }
+
+// console.log(repeatString('a', 4))
+// console.log(repeatString('a'))
+// console.log(repeatString('georgia', 10))
+
+// --------------------------------------------------------------------------
+
+
+// 22. Write a JavaScript function to get a part of a string after a specified character.
+// Test Data :
+// console.log(subStrAfterChars('w3resource: JavaScript Exercises', ':','a'));
+// console.log(subStrAfterChars('w3resource: JavaScript Exercises', 'E','b'));
+// Output :
+// "w3resource"
+// "xercises"
+
+
+// function subStrAfterChars(text,char){
+//     return text.slice(text.indexOf(char)+1)
+// }
+
+// console.log(subStrAfterChars('w3resource: JavaScript Exercises', 'E'))
+
+// ----------------------------------------------------------------------------
+
+
+// 24. Write a JavaScript function to truncate a string to a certain number of words.
+// Test Data :
+// console.log(truncate('The quick brown fox jumps over the lazy dog', 4));
+// Output :
+// "The quick brown fox"
+
+
+// function trunCate(str,num){
+//     if(!num && num!==0 || num<0) return new TypeError('Second parameter must be positive integer');
+//     // const arr=str.split(' ');
+//     // const resultArray=arr.slice(0,num);
+//     // const result=resultArray.join(' ');
+//     // return result
+
+//     return str.split(' ').slice(0,num).join(' ');
+// }
+
+// console.log(trunCate('The quick brown fox jumps over the lazy dog', 5))
+// console.log(trunCate('The quick brown fox jumps over the lazy dog', -5))
+
+// ---------------------------------------------------------------------------------------------
+
+
+// 26. Write a JavaScript function to remove the first occurrence of a given 'search string' from a string.
+// Test Data :
+// console.log(remove_first_occurrence("The quick brown fox jumps over the lazy dog", 'the'));
+// Output :
+// "The quick brown fox jumps over lazy dog"
+// Click me to see the solution.
+
+// function removeOccurrence(str,pattern){
+//     const regExp=new RegExp(pattern,'ig')
+//     return str.replace(regExp,'')
+// }
+
+// console.log(removeOccurrence("The quick brown fox jumps over the lazy dog", 'the'))
+
+// ---------------------------------------------------------------------------------------------------
