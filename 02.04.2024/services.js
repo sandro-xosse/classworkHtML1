@@ -4,8 +4,10 @@ import { HtmlElement } from './domelement.js';
 async function getData(endPoint){
     try{
         const url=B_URL + endPoint;
+        HtmlElement.loader.classList.add('active');
         const data=await fetch(url);
         const result=await data.json();
+        HtmlElement.loader.classList.remove('active');
         return result
     }catch{
         console.log('catch')

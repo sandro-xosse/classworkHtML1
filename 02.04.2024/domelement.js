@@ -4,5 +4,6 @@ export const HtmlElement={
     amount_1:document.querySelector('#amount_1'),
     amount_2:document.querySelector('#amount_2'),
     btn:document.querySelector('#btn'),
-    change_icon:document.querySelector('#change_icon')
+    change_icon:document.querySelector('#change_icon'),
+    loader:document.querySelector('.loader')
 }
