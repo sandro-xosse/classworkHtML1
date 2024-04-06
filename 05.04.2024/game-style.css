@@ -72,3 +72,15 @@ body{
 .O-win-board{
     background-color: #F2B137;   
 }
+
+.Winning_board{
+    font-size:100px;
+    position: absolute;
+    top:40%;
+    left: 40%;
+    display: none;
+}
+
+.Winning_board.active{
+    display: flex;
+}
