@@ -88,7 +88,7 @@ body{
 }
 
 .Winning_board{
-    font-size:70px;
+    font-size:7vw;
     position: fixed;
     top:0;
     bottom: 0;
@@ -97,8 +97,17 @@ body{
     display: none;
     justify-content: center;
     align-items: center;
+    color: #31C3BD;
 }
 
 .Winning_board.active{
     display: flex;
+}
+
+.quit_btn{
+    background-color: #A8BFC9;
+}
+
+.nextround_btn{
+    background-color: #F2B137;
 }

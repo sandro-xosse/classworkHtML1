@@ -66,16 +66,19 @@ function winningLines(arr){
     if (arr[2].innerText===arr[4].innerText && arr[4].innerText===arr[6].innerText &&!!arr[2].innerText)
     return console.log('winner is hhh')
 
+
+
 }
 
 
 function PlayerItem(){
-    if(gridElements.innerText==='X'){
+    const Player=gridElements
+    if(Player.innerHTML==='X'){
         X_playerIcon.classList.add("X_active")
     }
-    console.log(X_playerIcon)
+    console.log(gridElements)
 }
 
 
 
-PlayerItem()
+PlayerItem(gridElements)
