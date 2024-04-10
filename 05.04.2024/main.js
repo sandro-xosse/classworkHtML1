@@ -1,8 +1,11 @@
 const gridElements=Array.from(document.querySelectorAll('.grid-item'))
-const Winning_board=document.querySelector('.Winning_board')
+const Winning_board=document.querySelector('.Winning_board');
+const X_playerIcon=document.querySelector('.X_icon')
+const O_playerIcon=document.querySelector('.O_icon')
 
-const Xwinner=document.querySelector('./image/')
-const Owinner='O'
+// const X_player=document.querySelector('./tic-tac-design/tic-tac-design/image/Xdark')
+// console.log(X_player)
+// const O_player='O'
 
 let p=true;
 
@@ -16,13 +19,13 @@ function handClick(array){
         element.addEventListener('click',(e)=>{
             changePlayer(element);
             winningLines(gridElements);
+            PlayerItem(gridElements)
         })
         
     });
 }
+
 handClick(gridElements);
-
-
 
 
 function changePlayer(el){
@@ -37,8 +40,6 @@ function isEmpty(element){
       return false;
 }
 
-
-console.log(gridElements)
 
 function winningLines(arr){ 
     if (arr[0].innerText===arr[1].innerText && arr[1].innerText===arr[2].innerText&&!!arr[0].innerText)
@@ -68,7 +69,13 @@ function winningLines(arr){
 }
 
 
+function PlayerItem(){
+    if(gridElements.innerText==='X'){
+        X_playerIcon.classList.add("X_active")
+    }
+    console.log(X_playerIcon)
+}
 
 
 
-
+PlayerItem()

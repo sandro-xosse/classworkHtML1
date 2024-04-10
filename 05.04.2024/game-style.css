@@ -35,17 +35,31 @@ body{
 
 .grid-item {
     background-color: #1F3641;  
-    height: 8vw;  
-    padding: 20px;
+    width: 10vw;  
+    height: 10vw;
     font-size: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 20px 3px -3px rgba(0,0,0,0.1);
   }
 
-.flex-container{
-    width: 100%;
+.X_icon{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.X_active{
     display: flex;
-    flex-direction: column;
+}
+
+.O_icon{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 
 .results-board{
@@ -74,11 +88,15 @@ body{
 }
 
 .Winning_board{
-    font-size:100px;
-    position: absolute;
-    top:40%;
-    left: 40%;
+    font-size:70px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .Winning_board.active{
