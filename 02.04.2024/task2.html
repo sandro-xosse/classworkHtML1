@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            display: none;
+            background-color: red;
+            font-size: 30px;
+        }
+        .loader.active{
+            display: block;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="loader">
+        loader. . .
+    </div>
+    <form action="">
+        <div style="display: flex; gap:5px">
+            <div >
+                <input type="number" name="cur-1" value="1" min="0" id="amount_1">
+                <select name="code-1" id="select-1">
+                    
+                </select>    
+            </div>
+            <button type="button" id="change_icon">
+                <img style="width: 20px;" src="./image/change-png-to-icon-36.png" alt="" >
+            </button>
+            
+            <div>
+                <input type="number" name="cur-2" id="amount_2">
+                <select name="code-2" id="select-2">
+                    
+                </select>    
+            </div>
+        </div>    
+        <button type="button" id="btn">convert</button>
+    </form>
+    
+
+    <script type="module" src="./index2.js"></script>
+
+</body>
+</html>
