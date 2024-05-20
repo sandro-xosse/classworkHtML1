@@ -26,8 +26,40 @@
   <!-- last name -->
     <input type="text" ngModel name="lastName" placeholder="last name" required>
   <br>
-  <span *ngIf="f.controls['lastName']?.invalid && f.controls['lastName'].touched">last name is required</span>
+  <span *ngIf="f.controls['lastName']?.invalid && f.controls['lastName'].touched">
+    last name is required
+  </span>
   <br><br>
+</div>
+
+<div class="form-field">
+  <!-- mail -->
+    <input type="mail" ngModel name="mail" placeholder="email" required>
+  <br>
+  <span *ngIf="f.controls['mail']?.invalid && f.controls['mail'].touched">
+    email is required
+  </span>
+  <br><br>
+</div>
+
+<div class="form-field">
+  <!-- phone number -->
+    <input type="number" ngModel name="phoneNumber" placeholder="phone number"  required>
+  <br>
+  <span *ngIf="f.controls['phoneNumber']?.invalid && f.controls['phoneNumber'].touched">
+    phone number is required
+  </span>
+  <br><br>
+</div>
+
+<div class="form-field">
+  <!-- radio -->
+<p>Please select your gender:</p>
+  <input type="radio" id="html" name="gender" >
+  <label for="female">female</label><br>
+  <input type="radio" id="css" name="gender" >
+  <label for="male">male</label>
+<br><br>
 </div>
 
 <input type="submit"  value="sub" [disabled]="f.invalid">
