@@ -1,0 +1,22 @@
+<table *ngIf="toDoList.length; else elseblock">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of toDoList;index as i">
+            <td>
+                {{i +1}}
+            </td>
+            <td>
+                {{todo}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #elseblock>
+    <p style="color:red">to-do list not found!</p>
+</ng-template>

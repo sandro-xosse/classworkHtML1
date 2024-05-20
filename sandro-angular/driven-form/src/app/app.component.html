@@ -1,0 +1,34 @@
+<!-- two way binding example -->
+<!-- <p>two way bining!</p>
+<input type="text" [(ngModel)]="name">
+<br>
+<br>
+<button (click)="changeName()">change name</button>
+<br>
+<p>name: {{name}}</p> -->
+
+<hr>
+<!-- angular driven form example -->
+<p>template driven form example!</p>
+
+<form #f="ngForm" (ngSubmit)="submit(f)">
+  <!-- first name -->
+  <div class="form-field">
+    <input type="text" ngModel name="firstName" placeholder="first name" required>
+  <br>
+  <span *ngIf="f.controls['firstName']?.invalid && f.controls['firstName'].touched">
+    first name is required
+  </span>
+  </div>
+  
+  <br><br>
+<div class="form-field">
+  <!-- last name -->
+    <input type="text" ngModel name="lastName" placeholder="last name" required>
+  <br>
+  <span *ngIf="f.controls['lastName']?.invalid && f.controls['lastName'].touched">last name is required</span>
+  <br><br>
+</div>
+
+<input type="submit"  value="sub" [disabled]="f.invalid">
+</form>

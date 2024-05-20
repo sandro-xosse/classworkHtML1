@@ -1,0 +1,9 @@
+<div class="container">
+    <form #form="ngForm" (ngSubmit)="submitForm(form)">
+        <input type="text" name="todo" ngModel  required />
+        <button type="submit" (click)="submitForm(form)" >Submit</button>
+        <div *ngIf="form.controls['todo']?.invalid && form.controls['todo']?.touched">
+            <p style="color:red">please this field is required</p>
+        </div>
+   </form>
+</div>
