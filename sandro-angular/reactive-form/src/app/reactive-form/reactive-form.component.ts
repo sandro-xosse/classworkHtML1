@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import {  FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -7,12 +7,12 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./reactive-form.component.scss']
 })
 export class ReactiveFormComponent {
-  form:FormGroup=new FormGroup({
-    email:new FormControl(),
-    password:new FormControl()
+  public form:FormGroup=new FormGroup({
+    email:new FormControl('',[Validators.required,Validators.email]),
+    password:new FormControl('',Validators.required),
   })
 
-  submit(){
-
+  submit():void{
+    console.log(this.form)
   }
 }
