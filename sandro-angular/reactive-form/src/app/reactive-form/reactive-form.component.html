@@ -1,14 +1,27 @@
+
+
 <form [formGroup]="form" (ngSubmit)="submit()">
-    <input type="email" placeholder="email" formControlName="email">
-    <br>
-    <br>
-    <input type="password" placeholder="password" formControlName="password">
-    <br>
-    <br>
+    <fieldset >
+        <legend>personal info</legend>
+        <input type="text" placeholder="first name" formControlName="firstName">    
+        <input type="text" placeholder="last name" formControlName="lastName">
+    </fieldset>
+
+    <fieldset class="education"   formArrayName="education">
+        <legend>education:</legend>
+        <ng-container *ngFor="let edu of educations.controls; index as i">
+            <input type="text" placeholder="university or college" formControlName="universityName"> 
+            <div [formGroupName]="i">                   
+                <input type="button" value="-" (click)="removeEducation(i)">
+            </div>  
+            <br>            
+        </ng-container>           
+        <input class="btn-add-edu" type="button" value="addEducation" (click)="addEducation()">        
+    </fieldset>
+
     <button type="submit">submit</button>
 </form>
 <pre>
     {{form.value | json }}
-    {{form.status | json }}
 </pre>
 <hr>
