@@ -9,8 +9,13 @@ export class AppComponent {
   title = 'my-app';
 
   changed=false;
-  
+  editToDotitle=''
+
   change(key:string){
     this.changed=!this.changed
+  }
+
+  transferTitle(title:string){
+    this.editToDotitle=title;
   }
 }

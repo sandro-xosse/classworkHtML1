@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todo',
@@ -6,6 +6,8 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit,OnChanges{
+
+  @Output() changeToDo=new EventEmitter<string>();
 
   @Input("changed") changed!:boolean;
   
@@ -26,6 +28,10 @@ export class TodoComponent implements OnInit,OnChanges{
   getToDos(key:string):void{
     let toDos:string|null=localStorage.getItem(key);
     if(toDos) this.toDoList=JSON.parse(toDos)  
+  }
+
+  edit(title:string):void{
+    this.changeToDo.emit
   }
   
 }

@@ -3,6 +3,7 @@
         <tr>
             <th>#</th>
             <th>title</th>
+            <th>actions</th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +13,9 @@
             </td>
             <td>
                 {{todo}}
+            </td>
+            <td>
+                <button (click)="edit(todo)">edit</button>
             </td>
         </tr>
     </tbody>

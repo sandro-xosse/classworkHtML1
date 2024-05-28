@@ -50,8 +50,18 @@ export class ReactiveFormComponent {
     if(this.form.valid){
       localStorage.setItem('formsValue',JSON.stringify(this.form.value));
       this.form.reset();
+      (this.form.controls['education'] as FormArray).clear
       return;
     }
     alert('please fill this for correctly')
+  }
+
+  edit():void{
+    let formsValue=localStorage.getItem('formsValue');
+    if(formsValue){
+      let formObj.education.forEach((el:any)=>{
+        
+      })
+    }
   }
 }

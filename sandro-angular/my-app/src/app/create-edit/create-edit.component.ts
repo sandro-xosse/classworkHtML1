@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Form, NgForm } from '@angular/forms';
 
 @Component({
@@ -6,12 +6,14 @@ import { Form, NgForm } from '@angular/forms';
   templateUrl: './create-edit.component.html',
   styleUrls: ['./create-edit.component.css']
 })
-export class CreateEditComponent {
+export class CreateEditComponent{
   toDo: string = '';
   inputValid:boolean=true;
 
   @Output() eventEmitter=new EventEmitter<string>();
+  @Input() editTitle:string='';
   
+
   submitForm(form: NgForm): void {    
     if (form.valid) {
       this.saveToDo(form.form.controls['todo'].value);
@@ -31,5 +33,9 @@ export class CreateEditComponent {
       toDoList.push(toDo);
       localStorage.setItem('todo', JSON.stringify(toDoList));
     }
+  }
+  
+  ngOnchanges():void{
+
   }
 }

@@ -1,2 +1,2 @@
-<app-create-edit (eventEmitter)="change($event)"></app-create-edit>
-<app-todo [changed]="changed"></app-todo>
+<app-create-edit (eventEmitter)="change($event)" [editTitle]="editToDotitle()"></app-create-edit>
+<app-todo [changed]="changed" (changeToDo)="transferTitle($event)"></app-todo>
