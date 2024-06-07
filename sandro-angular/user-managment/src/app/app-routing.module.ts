@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path:'users',
-    loadChildren:()=>import('./users-management/users-management.module').then(m => m.UsersManagementModule)
+    loadChildren:()=>import('./users-management/user-management.module').then(m => m.UserManagementModule)
   }
 ];
 
