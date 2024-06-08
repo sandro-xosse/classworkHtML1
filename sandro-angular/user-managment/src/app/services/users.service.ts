@@ -13,24 +13,24 @@ export class UsersService {
   ) { }
 
   getUsers():Observable<IUser[]>{
-   return this.http.get<IUser[]>('http://localhost:3000/users')
-  }
-
-  getUser(id:number):Observable<IUser>{
-    return this.http.get<IUser>(`http://localhost:3000/users/${id}`)
+    return this.http.get<IUser[]>('http://localhost:3000/users')
    }
-
-  add(user:IUser):Observable<IUser>{
-    return this.http.post<IUser>('http://localhost:3000/users',user)
-  }
-
-  edit(user:IUser, id:number):Observable<IUser>{
-    return this.http.put<IUser>(`http://localhost:3000/users/${id}`,user)
-  }
-
-  delete(id:number):Observable<any>{
-    return this.http.delete<any>(`http://localhost:3000/users/{id}`)
-  }
+ 
+   getUser(id:string):Observable<IUser>{
+     return this.http.get<IUser>(`http://localhost:3000/users/${id}`)
+    }
+ 
+   add(user:IUser):Observable<IUser>{
+     return this.http.post<IUser>('http://localhost:3000/users',user)
+   }
+ 
+   edit(user:IUser, id:string):Observable<IUser>{
+     return this.http.put<IUser>(`http://localhost:3000/users/${id}`,user)
+   }
+ 
+   delete(id:string):Observable<any>{
+     return this.http.delete<any>(`http://localhost:3000/users/${id}`)
+   }
 
 
 

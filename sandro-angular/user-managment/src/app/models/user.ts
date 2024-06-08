@@ -1,6 +1,6 @@
 
 export interface IUser{
-    id?:number,
+    id?:string,
     fullName:string,
     age:number
 }
