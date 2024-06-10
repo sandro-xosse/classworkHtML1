@@ -1,14 +1,3 @@
 {
-  "users": [
-    {
-      "id": "7ad3",
-      "fullName": "sandro",
-      "age": 26
-    },
-    {
-      "id": "64d8",
-      "fullName": "xosse",
-      "age": 21
-    }
-  ]
+  "users": []
 }

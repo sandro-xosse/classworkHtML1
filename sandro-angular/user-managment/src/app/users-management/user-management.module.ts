@@ -5,6 +5,8 @@ import { CreateEditComponent } from './create-edit/create-edit.component';
 import { UserManagementComponent } from './user-management.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { authGuard } from '../guards/auth.guard';
+
 
 const routes: Routes = [
   {

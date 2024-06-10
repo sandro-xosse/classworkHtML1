@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, tap } from 'rxjs';
 import { IUser } from 'src/app/models/user';
@@ -41,7 +41,10 @@ export class CreateEditComponent implements OnInit{
      
       public form:FormGroup=this.fb.group({
         fullName:new FormControl('', [Validators.required]),
-        age:new FormControl('', [Validators.required])
+        age:new FormControl('', [Validators.required]),
+        role:new FormControl('user', [Validators.required]),
+        email:new FormControl('', [Validators.required]),
+        password:new FormControl('', [Validators.required,Validators.minLength(4)]),
       })
       
      
@@ -55,6 +58,7 @@ export class CreateEditComponent implements OnInit{
              ).subscribe()  
           }
           else{
+            console.log(this.form.value)
             this.userService.add(this.form.value)
             .pipe(
               tap(()=>{this.router.navigate([`/users`])})
