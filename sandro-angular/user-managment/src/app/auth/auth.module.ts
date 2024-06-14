@@ -28,6 +28,9 @@ const routes:Routes=[
     SignUpComponent,
     SignInComponent
   ],
+  exports:[
+    AuthComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

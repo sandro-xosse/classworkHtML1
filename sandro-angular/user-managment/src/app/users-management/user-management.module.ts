@@ -19,7 +19,8 @@ const routes: Routes = [
   },
   {
     path:'create',
-    component:CreateEditComponent    
+    component:CreateEditComponent,
+    canActivate:[authGuard]    
   },
  
 ];
@@ -34,8 +35,7 @@ const routes: Routes = [
     imports: [
       CommonModule,
       RouterModule.forChild(routes),
-      ReactiveFormsModule    
-
+      ReactiveFormsModule
     ]
   })
   export class UserManagementModule { }

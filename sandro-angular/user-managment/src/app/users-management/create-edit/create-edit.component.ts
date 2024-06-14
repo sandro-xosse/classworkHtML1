@@ -44,7 +44,7 @@ export class CreateEditComponent implements OnInit{
         age:new FormControl('', [Validators.required]),
         role:new FormControl('user', [Validators.required]),
         email:new FormControl('', [Validators.required]),
-        password:new FormControl('', [Validators.required,Validators.minLength(4)]),
+        password:new FormControl('', [Validators.required,Validators.minLength(8)]),
       })
       
      

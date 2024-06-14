@@ -1,3 +1,36 @@
 {
-  "users": []
+  "users": [
+    {
+      "fullName": "sandro",
+      "age": 26,
+      "role": "admin",
+      "email": "sss@gmail.com",
+      "password": "12345678",
+      "id": "d4ba"
+    },
+    {
+      "id": "33b0",
+      "fullName": "givi",
+      "age": 25,
+      "email": "givi@gmail.com",
+      "password": "55555555",
+      "role": "user"
+    },
+    {
+      "id": "5c3d",
+      "fullName": "buba",
+      "age": 27,
+      "email": "buba@gmail.com",
+      "password": "33333333",
+      "role": "user"
+    },
+    {
+      "id": "f339",
+      "fullName": "zutxi",
+      "age": 25,
+      "email": "zutxi@gmail.com",
+      "password": "11111111",
+      "role": "user"
+    }
+  ]
 }
